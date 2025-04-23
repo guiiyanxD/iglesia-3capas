@@ -1,0 +1,315 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding-top: 60px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logout-button a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin: 8px 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.logout-button a:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.lista {
+    margin-right: 30px; /* Aumenté el margen derecho entre listas */
+    padding: 15px; /* Añadí un padding alrededor de cada lista */
+    border: 1px solid #ccc; /* Añadí un borde sutil para visualizar el área de la lista */
+    border-radius: 5px; /* Añadí un pequeño radio al borde */
+    list-style-type: disc;
+}
+
+.lista li {
+    margin-bottom: 8px; /* Aumenté el margen inferior entre ítems */
+    padding-left: 10px; /* Añadí un padding izquierdo para separar el texto del punto */
+}
+
+.lista li:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior del último ítem */
+}
+
+table {
+    width: 100%; /* La tabla ocupa el 100% del ancho de su contenedor */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+    margin-top: 20px; /* Espacio superior para separar de otros elementos */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Borde gris para las celdas del encabezado y el cuerpo */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: center; /* Alineación del texto a la izquierda por defecto */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas del encabezado */
+    font-weight: bold; /* Texto en negrita para el encabezado */
+}
+
+button {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d0d0d0;
+    border-color: #bbb;
+}
+.button-primary {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.button-primary:active {
+    background-color: #004085;
+    border-color: #004085;
+}
+.button-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: 1px solid #6c757d;
+}
+
+.button-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+.button-secondary:active {
+    background-color: #494f54;
+    border-color: #494f54;
+}
+.button-danger {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+.button-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+.button-danger:active {
+    background-color: #bd2130;
+    border-color: #bd2130;
+}
+
+.grid-container {
+    display: grid; /* Activa CSS Grid para el contenedor */
+    grid-template-columns: auto auto auto; /* Define 3 columnas de ancho automático */
+    gap: 15px; /* Espacio entre filas y columnas */
+    padding: 15px;
+    background-color: #f0f0f0; /* Para visualizar el contenedor */
+}
+
+.grid-item {
+    /*background-color: #e0e0e0;*/
+    padding: 10px;
+    margin: 5px;
+    /*border: 1px solid #ccc;*/
+    text-align: left;
+}
+
+/* Opcional: Para definir anchos de columna específicos */
+.grid-container-custom {
+    display: grid;
+    grid-template-columns: 30% 70%; /* Dos columnas con anchos específicos */
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    /*background-color: #f0f0f0;*/
+}
+.grid-container-total {
+    display: grid;
+    grid-template-columns: 0% 100%; /* Dos columnas con anchos específicos */
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    /*background-color: #f0f0f0;*/
+}
+
+.grid-container-total-pantalla {
+    display: grid;
+    grid-template-columns: 90% 0%; /* Dos columnas con anchos específicos */
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    /*background-color: #f0f0f0;*/
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    padding: 0.375rem 0.75rem; /* Espaciado interno */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057; /* Color del texto */
+    background-color: #fff; /* Fondo blanco */
+    background-clip: padding-box;
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transiciones suaves */
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff; /* Borde azul al enfocar */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+}
+
+textarea.form-control {
+    height: auto; /* Permite que la altura se ajuste al contenido */
+}
+.form-group {
+    margin-bottom: 1rem; /* Añade un margen inferior de 1 rem (aproximadamente 16px por defecto) */
+}
+
+/* O si estás usando la clase form-control */
+textarea.form-control {
+    resize: none;
+}
+
+
+/* Encuentra el selector adecuado para la columna "Operaciones" */
+th:nth-child(6), /* Si "Operaciones" es la sexta columna en el encabezado */
+td:nth-child(6)   /* Si "Operaciones" es la sexta columna en las filas de datos */ {
+    width: 150px; /* Ajusta este valor según el espacio que necesites */
+}
+
+/* Si tienes una clase específica para la columna de "Operaciones" (más recomendado) */
+.columna-operaciones {
+    width: 180px; /* Ajusta este valor */
+}
+.columna-operaciones button {
+    display: inline-block; /* Permite establecer ancho y alto, pero los mantiene en la misma línea */
+    margin-right: 5px; /* Añade un pequeño espacio entre los botones */
+}
+
+.contenedor-tabla {
+    width: 90%; /* O el ancho que desees para el contenedor */
+    max-height: 80%; /* O la altura máxima que desees para el contenedor */
+    overflow: auto; /* Añade barras de scroll cuando el contenido excede el tamaño */
+    margin: 20px auto; /* Centra el contenedor en la página (opcional) */
+    border: 1px solid #ccc; /* Añade un borde para visualizar el contenedor (opcional) */
+}
+
+.contenedor-tabla table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
+
+.contenedor-tabla th,
+.contenedor-tabla td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Evita que el texto se envuelva, forzando el scroll horizontal si es necesario */
+}
+
+.contenedor-tabla th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw; /* O el ancho que prefieras */
+    max-height: calc(2 * (100px + 10px)); /* Altura máxima para dos filas */
+    overflow-y: auto;
+    margin: 20px auto; /* Centra el contenedor (opcional) */
+    border: 1px solid #ccc; /* Opcional: borde */
+    padding: 10px; /* Opcional: padding */
+}
+
+.tarjeta-opcion {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Color de fondo de la tarjeta */
+    border: 1px solid #dee2e6; /* Borde de la tarjeta */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: 1.1em;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contenedor-tarjetas div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.tarjeta-opcion a {
+    text-decoration: none;
+    color: #495057;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 100px; /* Para centrar verticalmente el texto en enlaces que ocupan toda la tarjeta */
+}
+
+.tarjeta-opcion a:hover {
+    color: #007bff;
+    background-color: #e9ecef;
+}
+
+.tarjeta-opcion:hover {
+    transform: scale(1.05); /* Pequeño efecto de escala al pasar el ratón */
+}
