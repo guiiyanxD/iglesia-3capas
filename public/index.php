@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && $_SERVER['REQUEST_URI'] === '/registe
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_SERVER['REQUEST_URI'] === '/register') {
     $pregister = new PRegister();
     $pregister->register(
-        $_POST['name'], $_POST['lname'], $_POST['email'],
+        $_POST['nombres'], $_POST['apellidos'], $_POST['email'],
         $_POST['password'], $_POST['passwordConfirmation']
     );
     return;

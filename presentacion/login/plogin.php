@@ -20,14 +20,15 @@ class PLogin
             '
         <p>'. $errors.'</p>
         <form action="/login" method="POST">
-            <label>
-                Email:
-                <input type="email" name="email" placeholder="coloque aqui su email">
-            </label>
-            <label>
-                Password:
-                <input type="password" name="password" placeholder="coloque aqui su password">
-            </label>
+            <div class="form-group" >
+                <label for="nombre">Email:</label><br>
+                <input class="form-control" type="email" name="email" style=" padding: 8px; border: 1px solid #ccc; border-radius: 4px;" placeholder="coloque aqui su email" required>
+            </div>
+            <div class="form-group" >
+                <label for="nombre">Email:</label><br>
+                <input class="form-control" type="password" name="password" style=" padding: 8px; border: 1px solid #ccc; border-radius: 4px;" placeholder="coloque aqui su password" required>
+            </div>
+           
            
             <input type="hidden" value="'.$token.'">
     

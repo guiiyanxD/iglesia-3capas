@@ -27,35 +27,34 @@ class PRegister
             '<h1>Formulario para registrarse</h1>
     <p>'. $errors.'</p>
     <form action="/register" method="POST">
-        <label>       
-            Nombres:
-            <input type="text" name="name" placeholder="Nombres" required>
-        </label>
-        <label>
-            Apellidos:
-            <input type="text" name="lname" placeholder="Apellidos" required>
-        </label>
-        <label>
-            Email:
-            <input type="email" name="email" placeholder="Email" required>
-        </label>
-        <label>
-            Password:
-            <input type="password" name="password" placeholder="coloque aqui su password" required>
-        </label>
-        <label>
-            Confirme su Contrasena:
-            <input type="password" name="passwordConfirmation" placeholder="Repita su contraseña" required>
-        </label>
+        <div class="form-group" >
+                <label for="nombres">Nombres:</label><br>
+                <input class="form-control" type="text" name="nombres" placeholder="coloque aqui sus nombres" required>
+        </div>
+        <div class="form-group" >
+                <label for="apellidos">Apellidos:</label><br>
+                <input class="form-control" type="text" name="apellidos" placeholder="coloque aqui sus apellidos" required>
+        </div>
+        <div class="form-group" >
+                <label for="nombre">Email:</label><br>
+                <input class="form-control" type="email" name="email" placeholder="coloque aqui su email" required>
+        </div>
+        <div class="form-group" >
+                <label for="password">Contrasena:</label><br>
+                <input class="form-control" type="password" name="password" placeholder="coloque aqui su Contrasena" required>
+        </div>
+        <div class="form-group" >
+                <label for="passwordConfirmation">Confirmacion Contrasena:</label><br>
+                <input class="form-control" type="password" name="passwordConfirmation" placeholder="repita la Contrasena" required>
+        </div>
        
         <input type="hidden" value="' .$token. '">
 
         <button type="submit" name="register">
             Registrarse
         </button>
-        <a type="button" href="/">
-            Volver al inicio
-        </a>
+        <button onclick=window.location.href="/login" class="button button-danger" >Cancelar </button>
+        
     </form>';
         return $form;
     }
