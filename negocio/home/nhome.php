@@ -6,7 +6,7 @@
     {
         private $plogin ;
         public function __construct(){
-            session_start();
+//            session_start();
             $this->plogin = new PLogin();
         }
         public function index(){

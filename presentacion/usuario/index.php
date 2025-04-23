@@ -23,6 +23,5 @@
     <div style="margin: 20px">
         <h1>Gestionar Usuarios</h1>
     </div>
-<!--    --><?php // var_dump($_SESSION['msgUser'])  ?>
 </body>
 </html>

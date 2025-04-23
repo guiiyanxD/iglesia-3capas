@@ -22,25 +22,7 @@
     <p>En este menu podra encontrar todas las funcionalidades que usted puede realizar dentro del sistema</p>
 </div>
 
-<!--<div class="container">
-    <?php
-/*        if($_SESSION['signin_user']['idCargo']==1){
 
-    */?>
-    <ul class="lista">
-        <li><a href="/usuario">Gestionar Usuarios</a></li>
-        <li><a href="/cargo">Gestionar Cargos</a></li>
-        <li><a href="/tipoEvento">Gestionar Tipos de Eventos</a></li>
-        <li><a href="/ministerio">Gestionar Ministerio</a></li>
-        <li><a href="#">Gestionar Cursos</a></li>
-        <li>Item 4 de la Lista 1</li>
-        <li>Item 5 de la Lista 1</li>
-    </ul>
-    <?php /*} */?>
-
-</div>
-
--->
 
 <div class="contenedor-tarjetas">
     <div class="tarjeta-opcion">
