@@ -37,15 +37,15 @@ class PRegister
         </label>
         <label>
             Email:
-            <input type="text" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required>
         </label>
         <label>
             Password:
-            <input type="text" name="password" placeholder="coloque aqui su password" required>
+            <input type="password" name="password" placeholder="coloque aqui su password" required>
         </label>
         <label>
-            Password Confirmation:
-            <input type="text" name="passwordConfirmation" placeholder="Repita su contraseña" required>
+            Confirme su Contrasena:
+            <input type="password" name="passwordConfirmation" placeholder="Repita su contraseña" required>
         </label>
        
         <input type="hidden" value="' .$token. '">

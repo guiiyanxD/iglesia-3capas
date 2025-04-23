@@ -22,11 +22,11 @@ class PLogin
         <form action="/login" method="POST">
             <label>
                 Email:
-                <input type="text" name="email" placeholder="coloque aqui su email">
+                <input type="email" name="email" placeholder="coloque aqui su email">
             </label>
             <label>
                 Password:
-                <input type="text" name="password" placeholder="coloque aqui su password">
+                <input type="password" name="password" placeholder="coloque aqui su password">
             </label>
            
             <input type="hidden" value="'.$token.'">
