@@ -51,6 +51,11 @@ class PUsuario
                     <input type="hidden" name="id" value="'.$dato['id'].'">
                     <button class=" button button-primary">Cambiar Cargo</button>
                 </form>
+                
+                <form action="/usuario/cambiarCargo" method="POST">
+                    <input type="hidden" name="id" value="'.$dato['id'].'">
+                    <button class=" button button-secondary">Asignar Ministerio</button>
+                </form>
                 <form action="/usuario/verHistorial" method="POST">
                     <input type="hidden" name="id" value="'.$dato['id'].'">
                     <button class=" button button-danger">Ver Historial</button>
